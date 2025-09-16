@@ -1,0 +1,29 @@
+{
+  "name": "playwrighttypescripttutorialfullcourse",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "DataDrivenTesting": "npx playwright test --grep @DataDrivenTesting",
+    "Suite": "npx playwright test --grep \"@SmokeTesting|@RegressionTesting\"",
+    "SmokeTesting": "npx playwright test --grep @SmokeTesting",
+    "RegressionTesting": "npx playwright test --grep @RegressionTesting",
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.3",
+    "allure-playwright": "^3.0.7"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "axios": "^1.7.9",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "xlsx": "^0.18.5"
+  }
+}
